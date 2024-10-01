@@ -7,6 +7,6 @@ const librarySchema = new mongoose.Schema({
     status:{type:String,required:true},
 })
 
-const libraryModel = mongoose.model('student',librarySchema)
+const libraryModel = mongoose.model('Library',librarySchema)
 
 export {libraryModel}
