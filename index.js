@@ -5,7 +5,7 @@ import con from './Db/connection.js'
 import web from './routes/web.js'
 const app = express()
 const port = process.env.PORT
-const db_url = process.env.DATABASE_URL
+const db_url = process.env.MONGODB_URI
 
 import path from 'path';
 import { fileURLToPath } from 'url';
