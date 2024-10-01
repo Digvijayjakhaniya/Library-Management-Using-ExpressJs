@@ -16,6 +16,7 @@
     "express": "^5.0.0-beta.3",
     "express-validator": "^7.1.0",
     "mongoose": "^8.3.5",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "vercel": "^37.6.0"
   }
 }
