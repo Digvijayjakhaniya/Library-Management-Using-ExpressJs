@@ -1,0 +1,25 @@
+<%- include('./includes/header.ejs') %>
+
+<div class="container">
+    
+    <a href="/"><button class="btn btn-outline-danger mt-5"><i class="fas fa-arrow-left pe-2"></i>Back</button></a>
+    <h2 class="text-center alert alert-danger mt-3">Update Book</h2>
+    
+    <form action="/update/<%= bookdata._id%>" method="POST">
+        <div class="mb-3">
+            <label for="book_name" class="form-label">Book Name</label>
+            <input type="text" class="form-control" id="book_name" name="book_name" value="<%= bookdata.book_name %>" required/>
+        </div>
+        <div class="mb-3">
+            <label for="code" class="form-label">Book Code</label>
+            <input type="text" class="form-control" id="code" name="code" value="<%= bookdata.code %>" required/>
+        </div>
+        <div class="mb-3">
+            <label for="book_author" class="form-label">Book Author</label>
+            <input type="text" class="form-control" id="book_author" name="book_author" value="<%= bookdata.book_author %>" required/>
+        </div>
+        <button type="submit" class="btn btn-primary ">Update Book</button>
+    </form>
+</div>
+
+<%- include('./includes/footer.ejs') %>
