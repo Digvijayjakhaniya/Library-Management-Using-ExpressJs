@@ -42,7 +42,7 @@
 
   <h2>Project Structure</h2>
     <pre><code>
-Node_Express_MongoDB_EJS-Library-Management/
+Library-Management-expressJs/
 │
 ├── controllers/
 │   └── LibraryController.js
